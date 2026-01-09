@@ -1,0 +1,31 @@
+.header_body {
+  width: 100%;
+  background-color: rgb(196, 192, 192);
+  top: 0;
+  padding: 10px;
+
+}
+
+.header_main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_right {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.header_profile img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-container {
+  background-color: aqua;
+}

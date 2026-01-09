@@ -1,0 +1,334 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+
+.navbar-container {
+  width: 250px;
+  min-width: 250px;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  color: rgb(25, 24, 24);
+  height: 100vh;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.navbar-container-logo {
+  padding: 1rem;
+
+}
+
+.navabar-container-list ul {
+  padding-left: 20px;
+}
+
+.navabar-container-list li {
+  list-style: none;
+  margin-top: 30px;
+
+}
+
+.navabar-container-list li a {
+  text-decoration: none;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
+  font-weight: 700;
+  align-items: center;
+  display: inline-flex;
+}
+
+.navabar-container-list li a:hover {
+  color: rgb(13, 158, 109);
+}
+
+.navabar-container-list li a svg {
+  margin-right: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.navbar-container-logo img {
+  width: 135px;
+}
+
+.main-content {
+  margin-left: 250px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header_body {
+  width: 100%;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); */
+}
+
+.header_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header_profile img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.grid-content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.grid-content-box {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.grid-content-box svg {
+  width: 2.30rem;
+  height: 2.30rem;
+}
+
+.grid-content-box p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.grid-content-box h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.grid-text-content {
+  display: flex;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  align-items: center;
+}
+
+.para {
+  font-weight: 400;
+  padding-left: .25rem;
+  padding-right: .25rem;
+  margin-top: .75rem;
+}
+
+.grid-content-box:nth-child(1) {
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity, 1));
+}
+
+.grid-content-box:nth-child(2) {
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
+}
+
+.grid-content-box:nth-child(3) {
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
+.grid-content-box:nth-child(4) {
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity, 1));
+}
+
+.grid-content-box:nth-child(5) {
+  background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
+}
+
+.middle-grid-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.middle-grid-inner {
+  margin: 0;
+  display: flex;
+  background-color: #fcfcfc;
+  gap: 10px;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000) 0 0 #0000, var(--tw-shadow);
+}
+
+.middle-grid-svg {
+  margin-right: 1rem;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: .20rem;
+  border-radius: 100%;
+}
+
+.middle-grid-inner:nth-child(1) .middle-grid-svg {
+  background-color: rgb(255 237 213 / 1);
+  color: rgb(234 88 12 / 1);
+}
+
+.middle-grid-inner:nth-child(2) .middle-grid-svg {
+  background-color: rgb(219 234 254 / 1);
+  color: rgb(37 99 235 / 1);
+}
+
+.middle-grid-inner:nth-child(3) .middle-grid-svg {
+  background-color: rgb(204 251 241 / 1);
+  color: rgb(13 148 136 / 1);
+}
+
+.middle-grid-inner:nth-child(4) .middle-grid-svg {
+  background-color: rgb(209 250 229 / 1);
+  color: rgb(5 150 105 / 1);
+}
+
+.middle-grid-svg svg {
+  width: 1.60rem;
+  height: 1.60rem;
+}
+
+.middle-grid-text h6 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+  margin-bottom: 0.25rem;
+}
+
+.middle-grid-text p {
+  margin: 0;
+  font-size: 1.55rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+/* Main background center layout */
+.main-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f6;
+  padding: 2rem;
+}
+
+/* Main white card */
+.login-card {
+  width: 60rem;
+  background: #ffffff;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Left Image section */
+.login-left {
+  width: 50%;
+  height: 100%;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right form section */
+.login-right {
+  width: 50%;
+  padding: 2rem 2rem;
+}
+
+.login-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* Inputs */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.form-control label {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-control input {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #12b886;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+/* Links */
+.link {
+  font-size: 0.9rem;
+  color: #12b886;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.link a {
+  color: #12b886;
+  text-decoration: none;
+}
